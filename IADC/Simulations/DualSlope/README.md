@@ -3,7 +3,7 @@ Ideal Dual-Slope ADC simulation files
 % Octave
 To simulate using GNU Octave
 
-first load sognal and control packages using the command line:
+first load signal and control packages using the command line:
 
 pkg load signal
 
