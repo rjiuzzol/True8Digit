@@ -20,14 +20,14 @@ R2=1e9; %switch off finite resistance
 Vref=10; % 10 V voltage reference
 
 % Sampling Parameters
-NCounts=120000000; % 8 1/2 digits
+
 Fclk=20e6; % system clock 20 MHz
 Tclk=1/Fclk; % system clock period
 
 Fint=10*1000; % Timer frequency for integrator circuit
 Tint=1/Fint; % switch between Vin and Vref
 
-Taper=5*R1*C1;%2e-6; % Aperture time
+Taper=82.5e-6;%5*R1*C1;%2e-6; % Aperture time
 %Taper=5e-6;% As in LTSpice
 %Taper=Tclk; %Taper minimun
 
@@ -161,8 +161,16 @@ nClkR = vec(nClkR);
 
 
 % Counter ratio, signal reconstruction
-countR=[nClkR nClkV nClkR./nClkV (nClkR./nClkV).*Vref.*(sgpol)]
+countR=[nClkR nClkV nClkR./nClkV (nClkR./nClkV).*Vref.*(sgpol)];
 
+%%
+% output signal
+
+sgout=countR(:,4);
+
+% Taper correction
+Kaper=sin(pi*freq*Taper)/(pi*freq*Taper);
+sgout_cor=sgout/Kaper;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ploting
@@ -179,7 +187,7 @@ if plt
   legend('Voltage Reference','Input signal');
 
   figure(iFig++,"position",[2*640 300 640 480]);
-  plot(t(1:end),countR(:,4),'r*');grid;
+  plot(t(1:end),sgout,'r*');grid;
   title('Sampled signal')
   xlabel('time (s)')
   ylabel('Amplitude (a.u.)')
