@@ -24,27 +24,27 @@ Vref=10; % 10 V voltage reference
 Fclk=20e6; % system clock 20 MHz
 Tclk=1/Fclk; % system clock period
 
-Fint=10*1000; % Timer frequency for integrator circuit
+Fint=32*1000; % Timer frequency for integrator circuit
 Tint=1/Fint; % switch between Vin and Vref
 
-Taper=82.5e-6;%5*R1*C1;%2e-6; % Aperture time
+Taper=1*R1*C1;%2e-6; % Aperture time
 %Taper=5e-6;% As in LTSpice
 %Taper=Tclk; %Taper minimun
 
 if (Taper >= Tint)
   disp("Taper to high, please decrease it");
-  sprintf(msg,"TIMER: %f", Tint);
+  msg = sprintf("TIMER: %f", Tint);
   disp(msg)
-  sprintf(msg, "Taper: %f", Taper);
+  msg = sprintf("Taper: %f", Taper);
   disp(msg)
   disp("Set Taper to a small value than Tint (TIMER)")
-  exit;
+  return;
 endif
 
 
 % input signal to be sampled
 freq=1000; % input signal frequency
-A0=1.0000054;       % input signal amplitude
+A0=1.00000;       % input signal amplitude
 ph=0;      % input signal phase
 Voff=A0;   %DC offset voltage
 pol=-1;   %signal polarity
@@ -88,11 +88,18 @@ Tratio=round(Tint/Tclk);
 TaperR=round(Taper/Tclk);
 
 
+%for k=0:M-1,
+%    q(k+1) = integral(fun,k*Tint,k*Tint+Taper)/Taper;
+%    TTs(k+1,1) = k*Tint;
+%    TTs(k+1,2) =k*Tint+Taper;
+%end
+%q=q.*(pol);
 
 for k=0:M-1,
   idxi=k*Tratio+1;
   idxf=idxi+TaperR-1;
 
+  xint(k+1) = sum(x1(idxi:idxf))./TaperR;
   TTs(k+1,3)=tclk(idxi);
   TTs(k+1,4)=tclk(idxf);
   TTs(k+1,5)=idxi;
@@ -171,6 +178,50 @@ sgout=countR(:,4);
 % Taper correction
 Kaper=sin(pi*freq*Taper)/(pi*freq*Taper);
 sgout_cor=sgout/Kaper;
+
+%% Results
+% Fourier transform
+%
+
+X2=fft(sgout);
+
+
+Mag=2*abs(X2)/length(X2);
+Phase=angle(X2).*(180/pi);
+
+
+fbin=nPeriods+1;
+As=Mag(fbin);
+Phi=Phase(fbin);
+
+As_cor=As/Kaper;
+
+%%
+%% Info results
+msg = ""
+disp('Results')
+disp('Input signal data:')
+msg = sprintf("Input amplitude (V): %f", A0);
+disp(msg)
+msg = sprintf("Input offset (V): %f", Voff);
+disp(msg)
+msg = sprintf("Input frequency (Hz): %f", freq);
+disp(msg)
+msg = sprintf("Input phase (degree): %f", ph);
+disp(msg)
+
+
+disp('Sampling parameters:')
+msg = sprintf("TIMER: %e", Tint);
+disp(msg)
+msg = sprintf("Taper: %e", Taper);
+disp(msg)
+
+disp('Results')
+msg = sprintf("Uncorrected output signal amplitude: %f", As);
+disp(msg)
+msg = sprintf("Corrected output signal amplitude: %f", As_cor);
+disp(msg)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ploting
