@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta content="IE=Edge" http-equiv="X-UA-Compatible" charset="UTF-8"/>
+   <title>Tek000</title>
+   <script type="text/javascript" src="C:/Program Files/Tektronix/TekScope/CommonFiles/Stylesheets/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="C:/Program Files/Tektronix/TekScope/CommonFiles/Stylesheets/easyzoom.js"></script>
+   <script src="C:/Program Files/Tektronix/TekScope/CommonFiles/Stylesheets/ZoomImage1.js"></script>
+   <script type="text/javascript" src="C:/Program Files/Tektronix/TekScope/CommonFiles/Stylesheets/event.js"></script>
+   <link type="text/css" rel="stylesheet" href="C:/Program Files/Tektronix/TekScope/CommonFiles/Stylesheets/measConfig.css"/>
+  </head>
+  <body>
+   <div id="Container" class="body">
+    <div style="background-color: rgb(10,98,125);">
+     <div>
+      <h2 id="reportHeader">Measurement Report</h2>
+      <img class="ImageDiv" src="C:/Program Files/Tektronix/TekScope/CommonFiles/Stylesheets/Teklogo.png"/>
+      <br>
+     </div>
+     <br>
+     <br>
+    </div>
+    <div>
+     <h2 id="dateTime">2025-12-12T12:53:03+01:00</h2>
+    </div>
+    <div>
+     <h2 id="sectionHeader">Setup Configuration</h2>
+     <div>
+      <table id="Scope Details" class="Table" name="Scope Details">
+       <thead>
+        <tr class="MeasName">
+         <th colspan="4">Scope Details</th>
+        </tr>
+        <tr>
+         <th class="ConfigHeader">Scope Model Number</th>
+         <th class="ConfigHeader">Scope Serial Number</th>
+         <th class="ConfigHeader">TekScope Version</th>
+         <th class="ConfigHeader">Scope Calibration Status</th>
+        </tr>
+       </thead>
+       <tr>
+        <td>MSO64B</td>
+        <td>C069984</td>
+        <td>2.0.3
+</td>
+        <td>Pass</td>
+       </tr>
+      </table>
+      <br>
+     </div>
+    </div>
+    <div>
+     <h2 id="sectionHeader">Waveform Histogram Results</h2>
+     <div>
+      <table class="Table" colspan="0" name="Waveform Histogram Results">
+       <thead>
+        <tr>
+         <tr>
+          <p id="sectionNullCheck">No Waveform Histogram Results Available</p>
+         </tr>
+        </tr>
+       </thead>
+      </table>
+      <br>
+     </div>
+    </div>
+    <div>
+     <h2 id="sectionHeader">Measurement Results</h2>
+     <div>
+      <table class="Table" colspan="15" name="Measurement Results">
+       <thead>
+        <tr>
+         <th>Name</th>
+         <th>Meas</th>
+         <th>Sources</th>
+         <th>Mean'</th>
+         <th>Min'</th>
+         <th>Max'</th>
+         <th>Pk-Pk'</th>
+         <th>Std Dev'</th>
+         <th>Pop'</th>
+         <th>Accum Mean</th>
+         <th>Accum Min</th>
+         <th>Accum Max</th>
+         <th>Accum Pk-Pk</th>
+         <th>Accum Std Dev</th>
+         <th>Accum Pop</th>
+        </tr>
+       </thead>
+       <tr>
+        <td valign="top">Meas1</td>
+        <td valign="top">TIE</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">3.2175 as</td>
+        <td valign="top">-8.1844 ps</td>
+        <td valign="top">7.8749 ps</td>
+        <td valign="top">16.059 ps</td>
+        <td valign="top">2.0458 ps</td>
+        <td valign="top">12287</td>
+        <td valign="top">202.43 zs</td>
+        <td valign="top">-10.884 ps</td>
+        <td valign="top">11.011 ps</td>
+        <td valign="top">21.895 ps</td>
+        <td valign="top">2.0700 ps</td>
+        <td valign="top">6720989</td>
+       </tr>
+       <tr>
+        <td valign="top">Meas2</td>
+        <td valign="top">TIE</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">5.4504 as</td>
+        <td valign="top">-7.9850 ps</td>
+        <td valign="top">7.7369 ps</td>
+        <td valign="top">15.722 ps</td>
+        <td valign="top">2.2905 ps</td>
+        <td valign="top">12288</td>
+        <td valign="top">7.6674 zs</td>
+        <td valign="top">-11.654 ps</td>
+        <td valign="top">10.724 ps</td>
+        <td valign="top">22.378 ps</td>
+        <td valign="top">2.2420 ps</td>
+        <td valign="top">6721536</td>
+       </tr>
+       <tr>
+        <td valign="top">Meas 3</td>
+        <td valign="top">JS: TIE(σ)</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">5.4504 as</td>
+        <td valign="top">-7.9850 ps</td>
+        <td valign="top">7.7369 ps</td>
+        <td valign="top">15.722 ps</td>
+        <td valign="top">2.2905 ps</td>
+        <td valign="top">12288</td>
+        <td valign="top">7.6674 zs</td>
+        <td valign="top">-11.654 ps</td>
+        <td valign="top">10.724 ps</td>
+        <td valign="top">22.378 ps</td>
+        <td valign="top">2.2420 ps</td>
+        <td valign="top">6721536</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: TJ@</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">29.421 ps</td>
+        <td valign="top">29.421 ps</td>
+        <td valign="top">29.421 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">29.049 ps</td>
+        <td valign="top">15.371 ps</td>
+        <td valign="top">30.887 ps</td>
+        <td valign="top">15.516 ps</td>
+        <td valign="top">1.7855 ps</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: EW@</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">8.1086 ns</td>
+        <td valign="top">8.1086 ns</td>
+        <td valign="top">8.1086 ns</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">8.1090 ns</td>
+        <td valign="top">8.1071 ns</td>
+        <td valign="top">8.1226 ns</td>
+        <td valign="top">15.516 ps</td>
+        <td valign="top">1.7855 ps</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: RJ-dd</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">1.8748 ps</td>
+        <td valign="top">1.8748 ps</td>
+        <td valign="top">1.8748 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">1.8323 ps</td>
+        <td valign="top">961.38 fs</td>
+        <td valign="top">1.9192 ps</td>
+        <td valign="top">957.79 fs</td>
+        <td valign="top">113.49 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: DJ-dd</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">3.0443 ps</td>
+        <td valign="top">3.0443 ps</td>
+        <td valign="top">3.0443 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">3.2700 ps</td>
+        <td valign="top">1.7435 ps</td>
+        <td valign="top">4.3925 ps</td>
+        <td valign="top">2.6490 ps</td>
+        <td valign="top">406.82 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: PJ</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">5.8706 ps</td>
+        <td valign="top">5.8706 ps</td>
+        <td valign="top">5.8706 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">5.6974 ps</td>
+        <td valign="top">3.0556 ps</td>
+        <td valign="top">7.3997 ps</td>
+        <td valign="top">4.3441 ps</td>
+        <td valign="top">614.40 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: DDJ</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: DCD</td>
+        <td valign="top">Ch 3</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">24.278 fs</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">364.52 fs</td>
+        <td valign="top">364.52 fs</td>
+        <td valign="top">59.986 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td valign="top">Meas 4</td>
+        <td valign="top">JS: TIE(σ)</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">3.2175 as</td>
+        <td valign="top">-8.1844 ps</td>
+        <td valign="top">7.8749 ps</td>
+        <td valign="top">16.059 ps</td>
+        <td valign="top">2.0458 ps</td>
+        <td valign="top">12287</td>
+        <td valign="top">202.43 zs</td>
+        <td valign="top">-10.884 ps</td>
+        <td valign="top">11.011 ps</td>
+        <td valign="top">21.895 ps</td>
+        <td valign="top">2.0700 ps</td>
+        <td valign="top">6720989</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: TJ@</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">27.532 ps</td>
+        <td valign="top">27.532 ps</td>
+        <td valign="top">27.532 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">27.967 ps</td>
+        <td valign="top">26.746 ps</td>
+        <td valign="top">29.328 ps</td>
+        <td valign="top">2.5815 ps</td>
+        <td valign="top">477.40 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: EW@</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">8.1105 ns</td>
+        <td valign="top">8.1105 ns</td>
+        <td valign="top">8.1105 ns</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">8.1101 ns</td>
+        <td valign="top">8.1087 ns</td>
+        <td valign="top">8.1113 ns</td>
+        <td valign="top">2.5815 ps</td>
+        <td valign="top">477.40 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: RJ-dd</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">1.8452 ps</td>
+        <td valign="top">1.8452 ps</td>
+        <td valign="top">1.8452 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">1.8400 ps</td>
+        <td valign="top">1.7698 ps</td>
+        <td valign="top">1.9214 ps</td>
+        <td valign="top">151.63 fs</td>
+        <td valign="top">26.204 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: DJ-dd</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">1.5716 ps</td>
+        <td valign="top">1.5716 ps</td>
+        <td valign="top">1.5716 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">2.0799 ps</td>
+        <td valign="top">1.3638 ps</td>
+        <td valign="top">3.2198 ps</td>
+        <td valign="top">1.8560 ps</td>
+        <td valign="top">322.64 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: PJ</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">3.5570 ps</td>
+        <td valign="top">3.5570 ps</td>
+        <td valign="top">3.5570 ps</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">4.2178 ps</td>
+        <td valign="top">2.7463 ps</td>
+        <td valign="top">5.7922 ps</td>
+        <td valign="top">3.0459 ps</td>
+        <td valign="top">489.71 fs</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: DDJ</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">547</td>
+       </tr>
+       <tr>
+        <td class="Empty"/>
+        <td valign="top">JS: DCD</td>
+        <td valign="top">Ch 2</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">1</td>
+        <td valign="top">23.468 fs</td>
+        <td valign="top">0.0000 s</td>
+        <td valign="top">307.10 fs</td>
+        <td valign="top">307.10 fs</td>
+        <td valign="top">57.949 fs</td>
+        <td valign="top">547</td>
+       </tr>
+      </table>
+      <br>
+     </div>
+    </div>
+    <div>
+     <h2 id="imageHeader">Views</h2>
+     <div id="imageDetails">
+      <div class="img">
+       <div class="desc">Time Domain View</div>
+       <a class="Time Domain View" href="C://True8Digit//LMK04821Timing//quaterperiodDelay//Jitter//Tek000_timedomainview1.png">
+        <img id="imageResolution" src="C:\True8Digit\LMK04821Timing\quaterperiodDelay\Jitter\Tek000_timedomainview1.png"/>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div>
+     <h2 id="imageHeader">Plots</h2>
+     <div id="imageDetails">
+      <div class="img">
+       <div class="desc">Plot 7 - TIE Histogram (Meas 4)</div>
+       <a class="Plot 7 - TIE Histogram (Meas 4)" href="C://True8Digit//LMK04821Timing//quaterperiodDelay//Jitter//Tek000_Plot 7 - TIE Histogram (Meas 4).png">
+        <img id="imageResolution" src="C:\True8Digit\LMK04821Timing\quaterperiodDelay\Jitter\Tek000_Plot 7 - TIE Histogram (Meas 4).png"/>
+       </a>
+      </div>
+      <div class="img">
+       <div class="desc">Plot 6 - TIE Spectrum (Meas 4)</div>
+       <a class="Plot 6 - TIE Spectrum (Meas 4)" href="C://True8Digit//LMK04821Timing//quaterperiodDelay//Jitter//Tek000_Plot 6 - TIE Spectrum (Meas 4).png">
+        <img id="imageResolution" src="C:\True8Digit\LMK04821Timing\quaterperiodDelay\Jitter\Tek000_Plot 6 - TIE Spectrum (Meas 4).png"/>
+       </a>
+      </div>
+      <div class="img">
+       <div class="desc">Plot 5 - Eye Diagram (Meas 4)</div>
+       <a class="Plot 5 - Eye Diagram (Meas 4)" href="C://True8Digit//LMK04821Timing//quaterperiodDelay//Jitter//Tek000_Plot 5 - Eye Diagram (Meas 4).png">
+        <img id="imageResolution" src="C:\True8Digit\LMK04821Timing\quaterperiodDelay\Jitter\Tek000_Plot 5 - Eye Diagram (Meas 4).png"/>
+       </a>
+      </div>
+      <div class="img">
+       <div class="desc">Plot 3 - TIE Histogram (Meas 3)</div>
+       <a class="Plot 3 - TIE Histogram (Meas 3)" href="C://True8Digit//LMK04821Timing//quaterperiodDelay//Jitter//Tek000_Plot 3 - TIE Histogram (Meas 3).png">
+        <img id="imageResolution" src="C:\True8Digit\LMK04821Timing\quaterperiodDelay\Jitter\Tek000_Plot 3 - TIE Histogram (Meas 3).png"/>
+       </a>
+      </div>
+      <div class="img">
+       <div class="desc">Plot 2 - TIE Spectrum (Meas 3)</div>
+       <a class="Plot 2 - TIE Spectrum (Meas 3)" href="C://True8Digit//LMK04821Timing//quaterperiodDelay//Jitter//Tek000_Plot 2 - TIE Spectrum (Meas 3).png">
+        <img id="imageResolution" src="C:\True8Digit\LMK04821Timing\quaterperiodDelay\Jitter\Tek000_Plot 2 - TIE Spectrum (Meas 3).png"/>
+       </a>
+      </div>
+      <div class="img">
+       <div class="desc">Plot 1 - Eye Diagram (Meas 3)</div>
+       <a class="Plot 1 - Eye Diagram (Meas 3)" href="C://True8Digit//LMK04821Timing//quaterperiodDelay//Jitter//Tek000_Plot 1 - Eye Diagram (Meas 3).png">
+        <img id="imageResolution" src="C:\True8Digit\LMK04821Timing\quaterperiodDelay\Jitter\Tek000_Plot 1 - Eye Diagram (Meas 3).png"/>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div>
+     <h2 id="sectionHeader">Global Configuration</h2>
+     <div>
+      <table id="Standard Configuration" class="Table" name="Standard Configuration">
+       <thead>
+        <tr class="MeasName">
+         <th colspan="8">Standard Configuration</th>
+        </tr>
+        <tr>
+         <th class="ConfigHeader">Gating</th>
+         <th class="ConfigHeader">Display Unit Type</th>
+         <th class="ConfigHeader">Standard Reference Levels</th>
+         <th class="ConfigHeader">Jitter Separation Model</th>
+         <th class="ConfigHeader">Dual Dirac Model</th>
+         <th class="ConfigHeader">Jitter Reference Levels</th>
+         <th class="ConfigHeader">Lock RJ</th>
+         <th class="ConfigHeader">Jitter Analysis Method</th>
+        </tr>
+       </thead>
+       <tr>
+        <td>None</td>
+        <td>Seconds</td>
+        <td>Every Acquisition</td>
+        <td>SpectralOnly</td>
+        <td>PCIExpress</td>
+        <td>First Acquisition</td>
+        <td>False</td>
+        <td>JitterOnly</td>
+       </tr>
+       <br>
+      </table>
+     </div>
+     <br>
+    </div>
+    <div>
+     <h2 id="sectionHeader">Reference Levels Configuration</h2>
+     <div>
+      <div>
+       <div>
+        <table class="MainTable" name="Reference Levels Configuration">
+         <tr>
+          <th class="ConfigHeader" colspan="1">Ref Levels</th>
+          <th class="ConfigHeader" colspan="1">Ch 2, Ch 3</th>
+         </tr>
+         <tr>
+          <td class="itemsleft">Ref Level Type</td>
+          <td class="itemsright">Global</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">Base Top Method</td>
+          <td class="itemsright">Automatic</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">RiseHigh</td>
+          <td class="itemsright">90%</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">RiseMid</td>
+          <td class="itemsright">50%</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">RiseLow</td>
+          <td class="itemsright">10%</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">FallHigh</td>
+          <td class="itemsright">90%</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">FallMid</td>
+          <td class="itemsright">50%</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">FallLow</td>
+          <td class="itemsright">10%</td>
+         </tr>
+         <tr>
+          <td class="borderbottomleft">Hysteresis</td>
+          <td class="borderbottomright">5%</td>
+         </tr>
+        </table>
+        <br>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div>
+     <h2 id="sectionHeader">Individual Measurement Configuration</h2>
+     <div>
+      <div>
+       <div>
+        <table class="MainTable" name="Individual Measurement Configuration">
+         <tr>
+          <th class="MeasName" colspan="12">Meas1 - TIE</th>
+         </tr>
+         <tr>
+          <th class="ConfigHeader" colspan="2">Ref Levels</th>
+          <th class="ConfigHeader" colspan="2">ClockRecovery</th>
+          <th class="ConfigHeader" colspan="2">Edge</th>
+          <th class="ConfigHeader" colspan="2">Filter</th>
+          <th class="ConfigHeader" colspan="2">Configurations</th>
+          <th class="ConfigHeader" colspan="2">Gating</th>
+         </tr>
+         <tr>
+          <td class="itemsleft">Ref Level Type</td>
+          <td class="itemsright">Global</td>
+          <td class="itemsleft">Method</td>
+          <td class="itemsright">Constant Clock</td>
+          <td class="itemsleft">Signal Type</td>
+          <td class="itemsright">Auto</td>
+          <td class="itemsleft">Filter Spec-High Pass(F1)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft">Custom Measurement Name</td>
+          <td class="itemsright">TIE</td>
+          <td class="itemsleft">Gating Type</td>
+          <td class="itemsright">None</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">Source(s)</td>
+          <td class="itemsright">Ch 2</td>
+          <td class="itemsleft">Mode</td>
+          <td class="itemsright">Mean</td>
+          <td class="itemsleft">Clock Edge</td>
+          <td class="itemsright">RisingEdge</td>
+          <td class="itemsleft">Filter Spec-Low Pass(F2)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+         </tr>
+         <tr>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft">Calculated On</td>
+          <td class="borderbottomright">Every Acquisition</td>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+         </tr>
+        </table>
+        <br>
+       </div>
+       <div>
+        <table class="MainTable" name="Individual Measurement Configuration">
+         <tr>
+          <th class="MeasName" colspan="12">Meas2 - TIE</th>
+         </tr>
+         <tr>
+          <th class="ConfigHeader" colspan="2">Ref Levels</th>
+          <th class="ConfigHeader" colspan="2">ClockRecovery</th>
+          <th class="ConfigHeader" colspan="2">Edge</th>
+          <th class="ConfigHeader" colspan="2">Filter</th>
+          <th class="ConfigHeader" colspan="2">Configurations</th>
+          <th class="ConfigHeader" colspan="2">Gating</th>
+         </tr>
+         <tr>
+          <td class="itemsleft">Ref Level Type</td>
+          <td class="itemsright">Global</td>
+          <td class="itemsleft">Method</td>
+          <td class="itemsright">Constant Clock</td>
+          <td class="itemsleft">Signal Type</td>
+          <td class="itemsright">Auto</td>
+          <td class="itemsleft">Filter Spec-High Pass(F1)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft">Custom Measurement Name</td>
+          <td class="itemsright">TIE</td>
+          <td class="itemsleft">Gating Type</td>
+          <td class="itemsright">None</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">Source(s)</td>
+          <td class="itemsright">Ch 3</td>
+          <td class="itemsleft">Mode</td>
+          <td class="itemsright">Mean</td>
+          <td class="itemsleft">Clock Edge</td>
+          <td class="itemsright">RisingEdge</td>
+          <td class="itemsleft">Filter Spec-Low Pass(F2)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+         </tr>
+         <tr>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft">Calculated On</td>
+          <td class="borderbottomright">Every Acquisition</td>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+         </tr>
+        </table>
+        <br>
+       </div>
+       <div>
+        <table class="MainTable" name="Individual Measurement Configuration">
+         <tr>
+          <th class="MeasName" colspan="10">Meas 3 - Jitter Summary</th>
+         </tr>
+         <tr>
+          <th class="ConfigHeader" colspan="2">Ref Levels</th>
+          <th class="ConfigHeader" colspan="2">ClockRecovery</th>
+          <th class="ConfigHeader" colspan="2">Filter</th>
+          <th class="ConfigHeader" colspan="2">Configurations</th>
+          <th class="ConfigHeader" colspan="2">Gating</th>
+         </tr>
+         <tr>
+          <td class="itemsleft">Ref Level Type</td>
+          <td class="itemsright">Global</td>
+          <td class="itemsleft">Method</td>
+          <td class="itemsright">Constant Clock</td>
+          <td class="itemsleft">Filter Spec-High Pass(F1)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft">Custom Measurement Name</td>
+          <td class="itemsright">Jitter Summary</td>
+          <td class="itemsleft">Gating Type</td>
+          <td class="itemsright">None</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">Source(s)</td>
+          <td class="itemsright">Ch 3</td>
+          <td class="itemsleft">Mode</td>
+          <td class="itemsright">Mean</td>
+          <td class="itemsleft">Filter Spec-Low Pass(F2)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+         </tr>
+         <tr>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft">Calculated On</td>
+          <td class="borderbottomright">Every Acquisition</td>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+         </tr>
+        </table>
+        <br>
+       </div>
+       <div>
+        <table class="MainTable" name="Individual Measurement Configuration">
+         <tr>
+          <th class="MeasName" colspan="10">Meas 4 - Jitter Summary</th>
+         </tr>
+         <tr>
+          <th class="ConfigHeader" colspan="2">Ref Levels</th>
+          <th class="ConfigHeader" colspan="2">ClockRecovery</th>
+          <th class="ConfigHeader" colspan="2">Filter</th>
+          <th class="ConfigHeader" colspan="2">Configurations</th>
+          <th class="ConfigHeader" colspan="2">Gating</th>
+         </tr>
+         <tr>
+          <td class="itemsleft">Ref Level Type</td>
+          <td class="itemsright">Global</td>
+          <td class="itemsleft">Method</td>
+          <td class="itemsright">Constant Clock</td>
+          <td class="itemsleft">Filter Spec-High Pass(F1)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft">Custom Measurement Name</td>
+          <td class="itemsright">Jitter Summary</td>
+          <td class="itemsleft">Gating Type</td>
+          <td class="itemsright">None</td>
+         </tr>
+         <tr>
+          <td class="itemsleft">Source(s)</td>
+          <td class="itemsright">Ch 2</td>
+          <td class="itemsleft">Mode</td>
+          <td class="itemsright">Mean</td>
+          <td class="itemsleft">Filter Spec-Low Pass(F2)</td>
+          <td class="itemsright">No Filter</td>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+          <td class="itemsleft"/>
+          <td class="itemsright"/>
+         </tr>
+         <tr>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft">Calculated On</td>
+          <td class="borderbottomright">Every Acquisition</td>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+          <td class="borderbottomleft"/>
+          <td class="borderbottomright"/>
+         </tr>
+        </table>
+        <br>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </body>
+ </html>
+</!DOCTYPE html>
